@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Burton/OneDrive/Documents/NetBeansProjects/Videojuego%20Gato/src/videojuego/gato/modelo/Jugador.java</file>
-            <file>file:/D:/Burton/OneDrive/Documents/NetBeansProjects/Videojuego%20Gato/src/videojuego/gato/modelo/Tablero.java</file>
-            <file>file:/D:/Burton/OneDrive/Documents/NetBeansProjects/Videojuego%20Gato/src/videojuego/gato/vista/Ventana.java</file>
-            <file>file:/D:/Burton/OneDrive/Documents/NetBeansProjects/Videojuego%20Gato/src/videojuego/gato/controlador/Juego.java</file>
+            <file>file:/D:/Burton/OneDrive/Documents/NetBeansProjects/Videojuego-Gato/src/videojuego/gato/vista/Ventana.java</file>
+            <file>file:/D:/Burton/OneDrive/Documents/NetBeansProjects/Videojuego-Gato/src/videojuego/gato/modelo/Tablero.java</file>
+            <file>file:/D:/Burton/OneDrive/Documents/NetBeansProjects/Videojuego-Gato/src/videojuego/gato/modelo/Jugador.java</file>
+            <file>file:/D:/Burton/OneDrive/Documents/NetBeansProjects/Videojuego-Gato/src/videojuego/gato/controlador/Juego.java</file>
+            <file>file:/D:/Burton/OneDrive/Documents/NetBeansProjects/Videojuego-Gato/src/videojuego/gato/VideojuegoGato.java</file>
         </group>
     </open-files>
 </project-private>

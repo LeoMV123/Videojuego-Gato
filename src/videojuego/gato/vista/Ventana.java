@@ -7,7 +7,7 @@ public class Ventana {
     public Ventana (){ }
     
     public static void mostrarMenuPrincipal(){
-        System.out.println("\tMenu principal\n");
+        System.out.println("\n\tMenu principal\n");
         System.out.println("1. Jugador VS Computadora");
         System.out.println("2. Jugador VS Jugador");
         System.out.println("3. Salir");
@@ -29,5 +29,10 @@ public class Ventana {
     
     public static void mostrarGanador(Jugador jugador){
         System.out.println("\nGanador jugador " + jugador.getFicha());
+    }
+    
+    public static void jugarOtraVez(){
+        System.out.println("\nDesea jugar otra partida? \t(S)Si\t(N)No");
+        System.out.print("\nOpcion: ");
     }
 }

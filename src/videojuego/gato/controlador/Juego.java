@@ -65,33 +65,44 @@ public class Juego {
                     break;
             }
         }while(jugar);
+        
+        jugar = true;
+        jugadorX.setPuntaje(0);
+        jugadorO.setPuntaje(0);
     }
     
     private static void turnoJugador(Jugador jugador, char opcion){
         tablero.colocarFicha(jugador.getFicha(), opcion);
+        
         if(tablero.comprobrarGanador(jugador.getFicha())){
-            Ventana.mostrarGanador(jugador);
             jugador.aumentarPuntaje();
-            System.out.print("Desea jugar otra partida? \t(S)Si\t(N)No");
-            System.out.print("\nOpcion: ");
-            opcion = sc.next().charAt(0);
-            switch(opcion){
-                case 's':
-                case 'S':
-                    jugar = true;
-                    turno = 0;
-                    tablero.rellenar();
-                    break;
-                case 'n':
-                case 'N':
-                    jugar = false;
-                    break;
-                default:
-                    System.out.println("Opcion no valida");
-                    break;
-            }
+            Ventana.mostrarInterfaz(jugadorX, jugadorO, tablero, turno);
+            Ventana.mostrarGanador(jugador);
+            jugarOtraVez();
         }else if(turno == 8){
-            System.out.println("Empate");
+            Ventana.mostrarInterfaz(jugadorX, jugadorO, tablero, turno);
+            System.out.println("\tEmpate");
+            jugarOtraVez();    
+        }   
+    }
+    
+    private static void jugarOtraVez(){
+        Ventana.jugarOtraVez();
+        opcion = sc.next().charAt(0);
+        switch(opcion){
+            case 's':
+            case 'S':
+                jugar = true;
+                turno = -1;
+                tablero.rellenar();
+                break;
+            case 'n':
+            case 'N':
+                jugar = false;
+                break;
+            default:
+                System.out.println("Opcion no valida");
+                break;
         }
     }
     
